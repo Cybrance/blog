@@ -1,0 +1,55 @@
+---
+title: "MongoDB with Discord.js"
+description: "How to use MongoDB with Discord.js bots on Cybrance.nl"
+---
+
+# MongoDB with Discord.js
+
+This guide explains how to integrate MongoDB with your Discord.js bot for persistent data storage and advanced features.
+
+## Why Use MongoDB?
+
+- Store user data, server settings, and more
+- Scale your bot with a reliable database
+
+## Getting Started
+
+1. Add `mongodb` and `mongoose` to your project:
+   ```bash
+   npm install mongodb mongoose
+   ```
+2. Connect to MongoDB in your bot code:
+   ```js
+   const mongoose = require("mongoose");
+   mongoose.connect(
+     "mongodb://<username>:<password>@<host>:<port>/<database>",
+     {
+       useNewUrlParser: true,
+       useUnifiedTopology: true,
+     }
+   );
+   ```
+3. Use schemas and models to store and retrieve data.
+
+## Example
+
+```js
+const User = mongoose.model(
+  "User",
+  new mongoose.Schema({
+    discordId: String,
+    coins: Number,
+  })
+);
+
+// Save user data
+await User.create({ discordId: "123", coins: 100 });
+
+// Fetch user data
+const user = await User.findOne({ discordId: "123" });
+```
+
+## Resources
+
+- [MongoDB Documentation](https://www.mongodb.com/docs/)
+- [Mongoose Documentation](https://mongoosejs.com/docs/)

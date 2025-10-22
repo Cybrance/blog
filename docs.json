@@ -29,7 +29,8 @@
             "group": "Libraries",
             "pages": [
               "discord-bots/discordpy",
-              "discord-bots/discordjs"
+              "discord-bots/discordjs",
+              "discord-bots/mongodb-discordjs"
             ]
           },
           {
@@ -48,6 +49,20 @@
               "discord-bots/frequent-questions/how-to-reset-bot-token",
               "discord-bots/frequent-questions/how-to-enable-privileged-intents",
               "discord-bots/frequent-questions/common-errors"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Blog",
+        "groups": [
+          {
+            "group": "Posts",
+            "pages": [
+              "blog/index",
+              "blog/getting-started",
+              "blog/best-practices",
+              "blog/scaling-bots"
             ]
           }
         ]
