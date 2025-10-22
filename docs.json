@@ -1,68 +1,53 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Cybrance Blog",
+  "name": "Cybrance Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#08DA51",
-    "dark": "#15803D"
+    "primary": "#08DA51",
+    "light": "#16A34A",
+    "dark": "#0F5132"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Discord Bot Hosting",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "discord-bots/index",
+              "discord-bots/getting-started",
+              "discord-bots/hosting-configuration"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Libraries",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "discord-bots/discordpy",
+              "discord-bots/discordjs"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Frequent Questions",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "discord-bots/frequent-questions/how-to-find-role-id",
+              "discord-bots/frequent-questions/how-to-find-channel-id",
+              "discord-bots/frequent-questions/how-to-find-guild-id",
+              "discord-bots/frequent-questions/how-to-find-user-id",
+              "discord-bots/frequent-questions/how-to-enable-developer-mode",
+              "discord-bots/frequent-questions/how-to-find-event-id",
+              "discord-bots/frequent-questions/how-to-find-thread-id",
+              "discord-bots/frequent-questions/how-to-find-message-id",
+              "discord-bots/frequent-questions/how-to-restart-after-push",
+              "discord-bots/frequent-questions/how-to-host-replit-bot",
+              "discord-bots/frequent-questions/how-to-reset-bot-token",
+              "discord-bots/frequent-questions/how-to-enable-privileged-intents",
+              "discord-bots/frequent-questions/common-errors"
             ]
           }
         ]
@@ -71,52 +56,49 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Cybrance Home",
+          "href": "https://cybrance.com",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Support",
+          "href": "https://cybrance.com/support",
+          "icon": "lifebuoy"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Pricing",
+        "href": "https://cybrance.com/pricing"
+      },
+      {
+        "label": "Contact",
+        "href": "https://cybrance.com/contact"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://panel.cybrance.com"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/cybrance",
+      "github": "https://github.com/Cybrance",
+      "discord": "https://discord.gg/cybrance"
     }
   }
 }
