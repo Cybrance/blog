@@ -1,0 +1,66 @@
+---
+title: "Discord.js Template"
+description: "A starter template for hosting Discord.js bots on Cybrance.nl"
+---
+
+# Discord.js Bot Template
+
+This page provides a starter template for building and hosting Discord.js bots on Cybrance.nl. Use this template to quickly set up your bot and deploy it to GitHub and Cybrance.
+
+## Features
+- Node.js 16+
+- Discord.js library
+- Ready for deployment to Cybrance
+- Example GitHub Actions workflow
+
+## Example Bot Code
+```js
+const { Client, GatewayIntentBits } = require('discord.js');
+require('dotenv').config();
+
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
+client.once('ready', () => {
+  console.log(`Logged in as ${client.user.tag}`);
+});
+
+client.on('messageCreate', message => {
+  if (message.content === '!ping') {
+    message.channel.send('Pong!');
+  }
+});
+
+client.login(process.env.DISCORD_TOKEN);
+```
+
+## Deploy to GitHub
+1. Create a new repository on GitHub and push your bot code.
+2. Add your bot token as a GitHub secret named `DISCORD_TOKEN`.
+
+## Example GitHub Actions Workflow
+Create `.github/workflows/deploy.yml`:
+```yaml
+name: Deploy Discord.js Bot
+on:
+  push:
+    branches: [ main ]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm install
+      - name: Run bot
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        run: node bot.js
+```
+
+## Resources
+- [discord.js Documentation](https://discord.js.org/#/docs/main/stable/general/welcome)
+- [Cybrance Node.js Hosting](https://cybrance.nl)
