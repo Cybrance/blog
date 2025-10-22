@@ -15,7 +15,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Discord Bot Hosting",
+        "tab": "Bot Hosting",
         "groups": [
           {
             "group": "Getting Started",
@@ -78,7 +78,7 @@
         {
           "anchor": "Support",
           "href": "https://cybrance.nl/support",
-          "icon": "lifebuoy"
+          "icon": "headset"
         }
       ]
     }
