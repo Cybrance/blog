@@ -1,10 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Cybrance Blog",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
+    "light": "#08DA51",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
