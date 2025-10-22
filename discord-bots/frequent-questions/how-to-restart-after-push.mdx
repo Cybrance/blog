@@ -1,0 +1,14 @@
+---
+title: "How to Restart Bot After Push"
+description: "Automatically restart your bot after pushing new code."
+---
+
+# How to Restart Your Bot After Push
+
+Use GitHub Actions to automatically restart your bot on Cybrance after each push:
+
+- Set up the [Autodeploy workflow](../../blog/autodeploy.mdx)
+- Add your Cybrance API key and server ID as secrets/variables
+- Every push to `main` will trigger a restart and update
+
+See the [Autodeploy guide](../../blog/autodeploy.mdx) for details.
