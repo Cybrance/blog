@@ -1,78 +1,81 @@
 ---
+title: "Development"
+description: "Preview changes locally to update your docs"
+---
+
+---
+
 title: 'Development'
-description: 'Preview changes locally to update your docs'
+description: 'Preview and deploy your Discord bots with Cybrance.nl'
+
 ---
 
 <Info>
-  **Prerequisites**:
-  - Node.js version 19 or higher
-  - A docs repository with a `docs.json` file
+  Cybrance.nl makes it easy to develop, preview, and deploy Discord bots. Use
+  our dashboard and CLI tools to manage your bots efficiently.
 </Info>
 
-Follow these steps to install and run Mintlify on your operating system.
+Follow these steps to develop and preview your Discord bot before deploying:
 
 <Steps>
-<Step title="Install the Mintlify CLI">
+<Step title="Install the Cybrance CLI">
 
 ```bash
-npm i -g mint
+npm i -g cybrance-cli
 ```
+
 </Step>
 
-<Step title="Preview locally">
+<Step title="Preview your bot locally">
 
-Navigate to your docs directory where your `docs.json` file is located, and run the following command:
+Navigate to your bot directory and run:
 
 ```bash
-mint dev
+cybrance preview
 ```
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+Your bot will run locally, and you can test its features before deploying.
 
 </Step>
 </Steps>
 
 ## Custom ports
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. For example, to run Mintlify on port 3333, use this command:
+By default, Cybrance uses port 3000 for local previews. You can customize the port with the `--port` flag:
 
 ```bash
-mint dev --port 3333
+cybrance preview --port 3333
 ```
 
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
+If the port is in use, Cybrance will automatically select the next available port.
 
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
+## CLI Updates
 
-## Mintlify versions
-
-Please note that each CLI release is associated with a specific version of Mintlify. If your local preview does not align with the production version, please update the CLI:
+Keep your CLI up to date for the latest features:
 
 ```bash
-npm mint update
+npm update -g cybrance-cli
 ```
 
-## Validating links
+## Validating bot configuration
 
-The CLI can assist with validating links in your documentation. To identify any broken links, use the following command:
+Check your bot's configuration and environment variables:
 
 ```bash
-mint broken-links
+cybrance validate
 ```
 
 ## Deployment
 
-If the deployment is successful, you should see the following:
+Deploy your bot to Cybrance.nl with a single command:
 
-<Frame>
-  <img src="/images/checks-passed.png" alt="Screenshot of a deployment confirmation message that says All checks have passed." style={{ borderRadius: '0.5rem' }} />
-</Frame>
+```bash
+cybrance deploy
+```
+
+Monitor deployment status and logs in your [dashboard](https://cybrance.nl/dashboard).
 
 ## Code formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
 
 ## Troubleshooting
 
@@ -83,6 +86,7 @@ We suggest using extensions on your IDE to recognize and format MDX. If you're a
     1. Remove the currently-installed version of the CLI: `npm remove -g mint`
     2. Upgrade to Node v19 or higher.
     3. Reinstall the CLI: `npm i -g mint`
+
   </Accordion>
 
   <Accordion title="Issue: Encountering an unknown error">

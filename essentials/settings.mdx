@@ -1,17 +1,17 @@
 ---
-title: 'Global Settings'
-description: 'Mintlify gives you complete control over the look and feel of your documentation using the docs.json file'
-icon: 'gear'
+title: "Cybrance.nl Settings"
+description: "Cybrance.nl gives you complete control over your Discord bot hosting and documentation using the docs.json file."
+icon: "gear"
 ---
 
-Every Mintlify site needs a `docs.json` file with the core configuration settings. Learn more about the [properties](#properties) below.
+Every Cybrance.nl site needs a `docs.json` file with the core configuration settings. Learn more about the [properties](#properties) below.
 
 ## Properties
 
 <ResponseField name="name" type="string" required>
-Name of your project. Used for the global title.
+Name of your project. Used for the global title and branding.
 
-Example: `mintlify`
+Example: `cybrance-bot-hosting`
 
 </ResponseField>
 
@@ -35,37 +35,37 @@ Example: `mintlify`
 </ResponseField>
 
 <ResponseField name="logo" type="string or object">
-  Path to logo image or object with path to "light" and "dark" mode logo images
+  Path to your Cybrance.nl logo image or object with path to "light" and "dark"
+  mode logo images
   <Expandable title="Logo">
     <ResponseField name="light" type="string">
-      Path to the logo in light mode
+      Path to the logo in light mode (e.g. `/logo/light.svg`)
     </ResponseField>
     <ResponseField name="dark" type="string">
-      Path to the logo in dark mode
+      Path to the logo in dark mode (e.g. `/logo/dark.svg`)
     </ResponseField>
     <ResponseField name="href" type="string" default="/">
-      Where clicking on the logo links you to
+      Where clicking on the logo links you to (e.g. Cybrance.nl homepage)
     </ResponseField>
   </Expandable>
 </ResponseField>
 
 <ResponseField name="favicon" type="string">
-  Path to the favicon image
+  Path to the favicon image (e.g. `/favicon.svg`)
 </ResponseField>
 
 <ResponseField name="colors" type="Colors">
-  Hex color codes for your global theme
+  Hex color codes for your Cybrance.nl global theme
   <Expandable title="Colors">
     <ResponseField name="primary" type="string" required>
-      The primary color. Used for most often for highlighted content, section
-      headers, accents, in light mode
+      The primary color. Used for highlighted content, section headers, accents,
+      in light mode. Example: `#5865F2`
     </ResponseField>
     <ResponseField name="light" type="string">
-      The primary color for dark mode. Used for most often for highlighted
-      content, section headers, accents, in dark mode
+      The primary color for dark mode. Example: `#7289DA`
     </ResponseField>
     <ResponseField name="dark" type="string">
-      The primary color for important buttons
+      The primary color for important buttons. Example: `#23272A`
     </ResponseField>
     <ResponseField name="background" type="object">
       The color of the background in both light and dark mode

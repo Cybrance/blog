@@ -1,43 +1,40 @@
-# Mintlify Starter Kit
+# Cybrance.nl Documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+Welcome to the official documentation for Cybrance.nl — the easiest way to host, manage, and scale your Discord bots.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## About Cybrance.nl
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+Cybrance.nl provides reliable, fast, and secure hosting for Discord bots. Whether you're a developer, community manager, or business, our platform makes it simple to deploy and manage your bots with powerful features and 24/7 support.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## Getting Started
+
+To get started, follow our [Quickstart Guide](quickstart.mdx) to set up your first bot in minutes.
 
 ## Development
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Preview your documentation changes locally using the Mintlify CLI:
 
 ```
 npm i -g mint
-```
-
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Your docs will be available at `http://localhost:3000`.
 
-## Publishing changes
+## Publishing Changes
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+Push changes to your repository to deploy updates automatically. For advanced deployment options, visit your [Cybrance Dashboard](https://cybrance.nl/dashboard).
 
-## Need help?
+## Support
 
-### Troubleshooting
+- Need help? Join our [Discord Community](https://discord.gg/cybrance) or email [support@cybrance.nl](mailto:support@cybrance.nl).
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+## Troubleshooting
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+- If your dev environment isn't running: Run `mint update` to ensure you have the latest CLI.
+- If a page loads as a 404: Make sure you are in a folder with a valid `docs.json`.
+
+## Resources
+
+- [Cybrance.nl Website](https://cybrance.nl)
+- [API Reference](api-reference/introduction.mdx)

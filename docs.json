@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "cybrance",
+  "name": "Cybrance.nl Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5865F2",
+    "light": "#7289DA",
+    "dark": "#23272A"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,53 +14,39 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
               "quickstart",
               "development"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Essentials",
             "pages": [
               "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
+              "essentials/navigation",
               "essentials/markdown",
               "essentials/code",
               "essentials/images",
               "essentials/reusable-snippets"
             ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Introduction",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Endpoints",
             "pages": [
-              "api-reference/endpoint/get",
               "api-reference/endpoint/create",
+              "api-reference/endpoint/get",
               "api-reference/endpoint/delete",
               "api-reference/endpoint/webhook"
             ]
@@ -71,14 +57,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Cybrance Website",
+          "href": "https://cybrance.nl",
+          "icon": "globe"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Discord Community",
+          "href": "https://discord.gg/cybrance",
+          "icon": "discord"
         }
       ]
     }
@@ -91,32 +77,33 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@cybrance.nl"
+      },
+      {
+        "label": "Discord",
+        "href": "https://discord.gg/cybrance"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://cybrance.nl/dashboard"
     }
   },
   "contextual": {
     "options": [
      "copy",
      "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
+     "discord",
+     "cybrance-api",
      "vscode"
    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/cybrance",
+      "github": "https://github.com/cybrance",
+      "linkedin": "https://linkedin.com/company/cybrance"
     }
   }
 }
