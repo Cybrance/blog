@@ -8,12 +8,14 @@ description: "A starter template for hosting Discord.py bots on Cybrance.nl"
 This page provides a starter template for building and hosting Discord.py bots on Cybrance.nl. You can use this template to quickly set up your bot and deploy it to GitHub and Cybrance.
 
 ## Features
+
 - Python 3.8+
 - Discord.py library
 - Ready for deployment to Cybrance
 - Example GitHub Actions workflow
 
 ## Example Bot Code
+
 ```python
 import discord
 from discord.ext import commands
@@ -34,16 +36,19 @@ bot.run(os.getenv("DISCORD_TOKEN"))
 ```
 
 ## Deploy to GitHub
+
 1. Create a new repository on GitHub and push your bot code.
 2. Add your bot token as a GitHub secret named `DISCORD_TOKEN`.
 
 ## Example GitHub Actions Workflow
+
 Create `.github/workflows/deploy.yml`:
+
 ```yaml
 name: Deploy Discord.py Bot
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -52,7 +57,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: "3.8"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -65,5 +70,6 @@ jobs:
 ```
 
 ## Resources
+
 - [discord.py Documentation](https://discordpy.readthedocs.io/en/stable/)
 - [Cybrance Python Hosting](https://cybrance.nl)
