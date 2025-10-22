@@ -72,12 +72,12 @@
       "anchors": [
         {
           "anchor": "Cybrance Home",
-          "href": "https://cybrance.com",
+          "href": "https://cybrance.nl",
           "icon": "globe"
         },
         {
           "anchor": "Support",
-          "href": "https://cybrance.com/support",
+          "href": "https://cybrance.nl/support",
           "icon": "lifebuoy"
         }
       ]
@@ -87,17 +87,17 @@
     "links": [
       {
         "label": "Pricing",
-        "href": "https://cybrance.com/pricing"
+        "href": "https://cybrance.nl/pricing"
       },
       {
         "label": "Contact",
-        "href": "https://cybrance.com/contact"
+        "href": "https://cybrance.nl/support"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://panel.cybrance.com"
+      "href": "https://panel.cybrance.nl"
     }
   },
   "contextual": {
