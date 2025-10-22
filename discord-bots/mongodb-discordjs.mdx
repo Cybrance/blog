@@ -1,69 +1,4 @@
-# MongoDB with Discord.js
-
-Integrate MongoDB with your Discord.js bot for persistent data storage, advanced features, and scalable performance.
-
-<img
-  src="/images/mongodb-discordjs.png"
-  alt="MongoDB and Discord.js integration"
-  style={{ maxWidth: "400px", margin: "2rem auto", display: "block" }}
-/>
-
-## Why Use MongoDB?
-
-- Store user data, server settings, and more
-- Scale your bot with a reliable database
-- Enable advanced features like leaderboards, profiles, and more
-
-## Getting Started
-
-1. Add `mongodb` and `mongoose` to your project:
-
-````bash
-npm install mongodb mongoose
-2. Connect to MongoDB in your bot code:
-```js
-const mongoose = require('mongoose');
- mongoose.connect('mongodb://<username>:<password>@<host>:<port>/<database>', {
-   useNewUrlParser: true,
-   useUnifiedTopology: true,
-});
-````
-
-3. Use schemas and models to store and retrieve data.
-
-## Example
-
-```js
-const User = mongoose.model(
-  "User",
-  new mongoose.Schema({
-    discordId: String,
-    coins: Number,
-  })
-);
-
-// Save user data
-await User.create({ discordId: "123", coins: 100 });
-
-// Fetch user data
-const user = await User.findOne({ discordId: "123" });
-```
-
-## Example Use Case
-
-Want to build a leaderboard or user profile system? MongoDB makes it easy to store and query user stats, achievements, and more.
-
-<img
-  src="/images/leaderboard-example.png"
-  alt="Leaderboard Example"
-  style={{ maxWidth: "400px", margin: "2rem auto", display: "block" }}
-/>
-
-## Resources
-
-- [MongoDB Documentation](https://www.mongodb.com/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/)
-  [![Cybrance.png](https://i.postimg.cc/jCVhPrnp/Cybrance.png)](https://postimg.cc/N24TvS4D)
+[![Cybrance.png](https://i.postimg.cc/jCVhPrnp/Cybrance.png)](https://postimg.cc/N24TvS4D)
 
 # How to Set Up the Template Bot on Cybrance Using GitHub
 
@@ -71,7 +6,7 @@ Want to build a leaderboard or user profile system? MongoDB makes it easy to sto
 
 ### 1. Log into the Cybrance Panel and _Head over to the Startup page_
 
-- Go to [Cybrance Panel](https://panel.Cybrance.com/) and log into your account.
+- Go to [Cybrance Panel](https://panel.Cybrance.nl/) and log into your account.
 
 ### 2. Clone the GitHub Repository
 
@@ -138,10 +73,9 @@ Want to build a leaderboard or user profile system? MongoDB makes it easy to sto
 ### 8. GitHub Authentication
 
 - **GIT USERNAME**: - Enter `Cybrance` as the GitHub username. - **Description**: Username to authenticate with Git.
-
   <a href="https://github.com/Cybrance/Discord-JS-MongoDB-Template">
-<img src="images/username.png" alt="username-Image" width="380" height="100">
-</a>
+  <img src="images/username.png" alt="username-Image" width="380" height="100">
+  </a>
 
 - **GIT ACCESS TOKEN** `(Not needed)`:
   - Enter your GitHub Personal Access Token if you are using it out of a own private repository.
@@ -165,7 +99,7 @@ Want to build a leaderboard or user profile system? MongoDB makes it easy to sto
 
 ### Step 1: Follow our Cybrance MongoDB Guide
 
-- Go to [Cybrance MongoDB Guide](https://Cybrance.com/blog) and follow the prompts to set up a new cluster.
+- Go to [MongoDB Guide](https://www.mongodb.com/resources/products/fundamentals/clusters) and follow the prompts to set up a new cluster.
 
 ### Step 2: Update Your .env file
 
