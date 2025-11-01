@@ -1,10 +1,10 @@
-# Cybrance.nl Documentation
+# Cytric.nl Documentation
 
 Welcome to the official documentation for Cybrance.nl — the easiest way to host, manage, and scale your Discord bots.
 
-## About Cybrance.nl
+## About Cytric.nl
 
-Cybrance.nl provides reliable, fast, and secure hosting for Discord bots. Whether you're a developer, community manager, or business, our platform makes it simple to deploy and manage your bots with powerful features and 24/7 support.
+Cytric.nl provides reliable, fast, and secure hosting for Discord bots. Whether you're a developer, community manager, or business, our platform makes it simple to deploy and manage your bots with powerful features and 24/7 support.
 
 ## Getting Started
 
@@ -23,11 +23,11 @@ Your docs will be available at `http://localhost:3000`.
 
 ## Publishing Changes
 
-Push changes to your repository to deploy updates automatically. For advanced deployment options, visit your [Cybrance Dashboard](https://cybrance.nl/dashboard).
+Push changes to your repository to deploy updates automatically. For advanced deployment options, visit your [Cytric Dashboard](https://cybrance.nl/dashboard).
 
 ## Support
 
-- Need help? Join our [Discord Community](https://discord.gg/cybrance) or email [support@cybrance.nl](mailto:support@cybrance.nl).
+- Need help? Join our [Discord Community](https://discord.gg/cybrance) or email [support@cytric.nl](mailto:support@cybrance.nl).
 
 ## Troubleshooting
 
@@ -36,5 +36,5 @@ Push changes to your repository to deploy updates automatically. For advanced de
 
 ## Resources
 
-- [Cybrance.nl Website](https://cybrance.nl)
+- [Cytric.nl Website](https://cytric.nl)
 - [API Reference](api-reference/introduction.mdx)
