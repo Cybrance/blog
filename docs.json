@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Cybrance Docs",
+  "name": "Cytric Docs",
   "colors": {
     "primary": "#08DA51",
     "light": "#16A34A",
@@ -71,13 +71,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Cybrance Home",
-          "href": "https://cybrance.nl",
+          "anchor": "Cytric Home",
+          "href": "https://Cytric.nl",
           "icon": "globe"
         },
         {
           "anchor": "Support",
-          "href": "https://cybrance.nl/support",
+          "href": "https://Cytric.nl/support",
           "icon": "headset"
         }
       ]
@@ -87,17 +87,17 @@
     "links": [
       {
         "label": "Pricing",
-        "href": "https://cybrance.nl#pricing"
+        "href": "https://Cytric.nl#pricing"
       },
       {
         "label": "Contact",
-        "href": "https://cybrance.nl/support"
+        "href": "https://Cytric.nl/support"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://panel.cybrance.nl"
+      "href": "https://panel.Cytric.nl"
     }
   },
   "contextual": {
@@ -111,9 +111,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/cybrance",
-      "github": "https://github.com/Cybrance",
-      "discord": "https://discord.gg/cybrance"
+      "x": "https://x.com/Cytric",
+      "github": "https://github.com/Cytric",
+      "discord": "https://discord.gg/Cytric"
     }
   }
 }

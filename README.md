@@ -1,6 +1,6 @@
 # Cytric.nl Documentation
 
-Welcome to the official documentation for Cybrance.nl — the easiest way to host, manage, and scale your Discord bots.
+Welcome to the official documentation for Cytric.nl — the easiest way to host, manage, and scale your Discord bots.
 
 ## About Cytric.nl
 
@@ -23,11 +23,11 @@ Your docs will be available at `http://localhost:3000`.
 
 ## Publishing Changes
 
-Push changes to your repository to deploy updates automatically. For advanced deployment options, visit your [Cytric Dashboard](https://cybrance.nl/dashboard).
+Push changes to your repository to deploy updates automatically. For advanced deployment options, visit your [Cytric Dashboard](https://Cytric.nl/dashboard).
 
 ## Support
 
-- Need help? Join our [Discord Community](https://discord.gg/cybrance) or email [support@cytric.nl](mailto:support@cybrance.nl).
+- Need help? Join our [Discord Community](https://discord.gg/Cytric) or email [support@cytric.nl](mailto:support@Cytric.nl).
 
 ## Troubleshooting
 
